@@ -13,13 +13,14 @@ Bourbon is a library of pure Sass mixins that are designed to be simple and easy
 
 The mixins contain vendor specific prefixes for all CSS3 properties for support amongst modern browsers. The prefixes also ensure graceful degradation for older browsers that support only CSS3 prefixed properties. Bourbon uses SCSS syntax.
 
-### [Documentation & Demo](http://bourbon.io)
+#### [Documentation & Demo](http://bourbon.io)
+
+#### [Changelog](https://github.com/thoughtbot/bourbon/releases)
 
 ## Requirements
 
 - Sass 3.3+
-
-:warning: If you are using **LibSass** or **sass-rails**, or need Sass 3.2 support, use Bourbon **3.2.x**.
+- :warning: If you are using Bourbon with **LibSass**, **sass-rails**, **Compass**, **Foundation** or need **Sass 3.2 support**, you should [use Bourbon 3.2.x](#installing-older-versions-of-bourbon).
 
 ## Installation for Rails 3.1+
 
@@ -55,16 +56,13 @@ The mixins contain vendor specific prefixes for all CSS3 properties for support 
   @import "users";
   ```
 
-[Help! I’m getting an undefined mixin error.](https://github.com/thoughtbot/bourbon/wiki/Rails-Help-%5C-Undefined-mixin)
-
-- [Rails 3.0.x installation instructions](https://github.com/thoughtbot/bourbon/wiki/Rails-3.0.x-Install)
-- [Rails 2.3 installation instructions](https://github.com/thoughtbot/bourbon/wiki/Bourbon-v2.x-or-Rails-2.3-Install)
+  [Help! I’m getting an undefined mixin error.](https://github.com/thoughtbot/bourbon/wiki/Rails-Help-%5C-Undefined-mixin)
 
 ## Installation for Non-Rails projects
 
 Bourbon includes an easy way to generate a directory with all the necessary files. For command line help, use `bourbon help` or visit the [Command Line Tools Wiki](https://github.com/thoughtbot/bourbon/wiki/Command-Line-Tools).
 
-1. Install (Bourbon 3.0+):
+1. Install the Bourbon gem:
 
   ```bash
   gem install bourbon
@@ -76,9 +74,9 @@ Bourbon includes an easy way to generate a directory with all the necessary file
   bourbon install
   ```
 
-  The generated folder will contain all the mixins and other necessary Bourbon files. It is recommended not to add or modify the Bourbon files so that you can update Bourbon easily.
+  _It is recommended not to add or modify the Bourbon files so that you can update Bourbon easily._
 
-  You can specify a target directory using the `path` flag:
+  **Pro Tip:** You can specify a target directory using the `path` flag:
 
   ```bash
   bourbon install --path my/custom/path/
@@ -90,19 +88,40 @@ Bourbon includes an easy way to generate a directory with all the necessary file
   @import "bourbon/bourbon";
   ```
 
-_Note: Bourbon no longer requires a custom `sass --watch` command for Bourbon v3.0+_
+### Installing older versions of Bourbon
 
-#### Other Commands
+1. Uninstall any Bourbon gem versions you already have:
+
+  ```bash
+  gem uninstall bourbon
+  ```
+
+2. Install the Bourbon gem, using the `-v` flag to specify the version you need:
+
+  ```bash
+  gem install bourbon -v 3.2.3
+  ```
+
+3. Follow the instructions above to install Bourbon into your project.
+
+## Command Line Interface
 
 ```bash
 bourbon help
+bourbon install
 bourbon update
+bourbon version
 ```
 
-#### [Bourbon v2.x install instructions](https://github.com/thoughtbot/bourbon/wiki/Bourbon-v2.x-or-Rails-2.3-Install)
+More information can be found in the [wiki](https://github.com/thoughtbot/bourbon/wiki/Command-Line-Interface).
 
-- [Changelog](https://github.com/thoughtbot/bourbon/releases)
-- [Browser support](https://github.com/thoughtbot/bourbon/wiki/Browser-Support)
+## Browser support
+
+- Firefox 3.6+
+- Safari 5.1+
+- Chrome 10.0+
+- Opera 12+
+- Internet Explorer 9+
 
 ## The Bourbon family
 
@@ -119,4 +138,4 @@ Bourbon is maintained and funded by [thoughtbot, inc](http://thoughtbot.com). Tw
 
 ## License
 
-Bourbon is Copyright © 2011–2014 thoughtbot. It is free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
+Copyright © 2011–2014 [thoughtbot, inc](http://thoughtbot.com). Bourbon is free software, and may be redistributed under the terms specified in the [license](LICENSE.md).
