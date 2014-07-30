@@ -3,85 +3,82 @@
  * Copyright 2011–2014 thoughtbot, inc.
  * MIT License */
 
-// Optional path variable for @import rules
-$path-prefix: "" !default;
-
 // Settings
-@import "#{$path-prefix}settings/prefixer";
-@import "#{$path-prefix}settings/px-to-em";
-@import "#{$path-prefix}settings/asset-pipeline";
+@import "settings/prefixer";
+@import "settings/px-to-em";
+@import "settings/asset-pipeline";
 
 // Custom Helpers
-@import "#{$path-prefix}helpers/convert-units";
-@import "#{$path-prefix}helpers/gradient-positions-parser";
-@import "#{$path-prefix}helpers/is-num";
-@import "#{$path-prefix}helpers/linear-angle-parser";
-@import "#{$path-prefix}helpers/linear-gradient-parser";
-@import "#{$path-prefix}helpers/linear-positions-parser";
-@import "#{$path-prefix}helpers/linear-side-corner-parser";
-@import "#{$path-prefix}helpers/radial-arg-parser";
-@import "#{$path-prefix}helpers/radial-positions-parser";
-@import "#{$path-prefix}helpers/radial-gradient-parser";
-@import "#{$path-prefix}helpers/render-gradients";
-@import "#{$path-prefix}helpers/shape-size-stripper";
-@import "#{$path-prefix}helpers/str-to-num";
+@import "helpers/convert-units";
+@import "helpers/gradient-positions-parser";
+@import "helpers/is-num";
+@import "helpers/linear-angle-parser";
+@import "helpers/linear-gradient-parser";
+@import "helpers/linear-positions-parser";
+@import "helpers/linear-side-corner-parser";
+@import "helpers/radial-arg-parser";
+@import "helpers/radial-positions-parser";
+@import "helpers/radial-gradient-parser";
+@import "helpers/render-gradients";
+@import "helpers/shape-size-stripper";
+@import "helpers/str-to-num";
 
 // Custom Functions
-@import "#{$path-prefix}functions/assign";
-@import "#{$path-prefix}functions/color-lightness";
-@import "#{$path-prefix}functions/flex-grid";
-@import "#{$path-prefix}functions/golden-ratio";
-@import "#{$path-prefix}functions/grid-width";
-@import "#{$path-prefix}functions/modular-scale";
-@import "#{$path-prefix}functions/px-to-em";
-@import "#{$path-prefix}functions/px-to-rem";
-@import "#{$path-prefix}functions/strip-units";
-@import "#{$path-prefix}functions/tint-shade";
-@import "#{$path-prefix}functions/transition-property-name";
-@import "#{$path-prefix}functions/unpack";
+@import "functions/assign";
+@import "functions/color-lightness";
+@import "functions/flex-grid";
+@import "functions/golden-ratio";
+@import "functions/grid-width";
+@import "functions/modular-scale";
+@import "functions/px-to-em";
+@import "functions/px-to-rem";
+@import "functions/strip-units";
+@import "functions/tint-shade";
+@import "functions/transition-property-name";
+@import "functions/unpack";
 
 // CSS3 Mixins
-@import "#{$path-prefix}css3/animation";
-@import "#{$path-prefix}css3/appearance";
-@import "#{$path-prefix}css3/backface-visibility";
-@import "#{$path-prefix}css3/background";
-@import "#{$path-prefix}css3/background-image";
-@import "#{$path-prefix}css3/border-image";
-@import "#{$path-prefix}css3/border-radius";
-@import "#{$path-prefix}css3/box-sizing";
-@import "#{$path-prefix}css3/calc";
-@import "#{$path-prefix}css3/columns";
-@import "#{$path-prefix}css3/filter";
-@import "#{$path-prefix}css3/flex-box";
-@import "#{$path-prefix}css3/font-face";
-@import "#{$path-prefix}css3/font-feature-settings";
-@import "#{$path-prefix}css3/hyphens";
-@import "#{$path-prefix}css3/hidpi-media-query";
-@import "#{$path-prefix}css3/image-rendering";
-@import "#{$path-prefix}css3/keyframes";
-@import "#{$path-prefix}css3/linear-gradient";
-@import "#{$path-prefix}css3/perspective";
-@import "#{$path-prefix}css3/radial-gradient";
-@import "#{$path-prefix}css3/transform";
-@import "#{$path-prefix}css3/transition";
-@import "#{$path-prefix}css3/user-select";
-@import "#{$path-prefix}css3/placeholder";
+@import "css3/animation";
+@import "css3/appearance";
+@import "css3/backface-visibility";
+@import "css3/background";
+@import "css3/background-image";
+@import "css3/border-image";
+@import "css3/border-radius";
+@import "css3/box-sizing";
+@import "css3/calc";
+@import "css3/columns";
+@import "css3/filter";
+@import "css3/flex-box";
+@import "css3/font-face";
+@import "css3/font-feature-settings";
+@import "css3/hyphens";
+@import "css3/hidpi-media-query";
+@import "css3/image-rendering";
+@import "css3/keyframes";
+@import "css3/linear-gradient";
+@import "css3/perspective";
+@import "css3/radial-gradient";
+@import "css3/transform";
+@import "css3/transition";
+@import "css3/user-select";
+@import "css3/placeholder";
 
 // Addons & other mixins
-@import "#{$path-prefix}addons/button";
-@import "#{$path-prefix}addons/clearfix";
-@import "#{$path-prefix}addons/directional-values";
-@import "#{$path-prefix}addons/ellipsis";
-@import "#{$path-prefix}addons/font-family";
-@import "#{$path-prefix}addons/hide-text";
-@import "#{$path-prefix}addons/html5-input-types";
-@import "#{$path-prefix}addons/position";
-@import "#{$path-prefix}addons/prefixer";
-@import "#{$path-prefix}addons/retina-image";
-@import "#{$path-prefix}addons/size";
-@import "#{$path-prefix}addons/timing-functions";
-@import "#{$path-prefix}addons/triangle";
-@import "#{$path-prefix}addons/word-wrap";
+@import "addons/button";
+@import "addons/clearfix";
+@import "addons/directional-values";
+@import "addons/ellipsis";
+@import "addons/font-family";
+@import "addons/hide-text";
+@import "addons/html5-input-types";
+@import "addons/position";
+@import "addons/prefixer";
+@import "addons/retina-image";
+@import "addons/size";
+@import "addons/timing-functions";
+@import "addons/triangle";
+@import "addons/word-wrap";
 
 // Soon to be deprecated Mixins
-@import "#{$path-prefix}bourbon-deprecated-upcoming";
+@import "bourbon-deprecated-upcoming";
